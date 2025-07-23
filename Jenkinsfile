@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        label{
+            chumma slv
+        }
+    }
 
     stages {
         stage('Code') {
@@ -10,6 +14,12 @@ pipeline {
         stage('code-build') {
             steps {
                  sh "mvn clean package"
+            }
+        }
+        stage('artifact')
+        {
+            steps{
+                
             }
         }
       
