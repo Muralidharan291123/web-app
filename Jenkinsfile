@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        label{
-            chumma slv
-        }
+        label 'chumma slv'
     }
 
     stages {
